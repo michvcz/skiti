@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Norda Automation</title>
+  <link rel="stylesheet" href="styleindexchowaniestrony.css">
+  <link rel="icon" type="png" sizes="16x16" href="favicon-16x16.png">
+  <style>
+    body {
+      align-items: center;
+      text-align: center;
+      background-color: #FFFFFF;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+    }
+
+    #logo {
+      margin-left: 50px;
+    }
+
+    #menu {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 50px;
+    }
+
+    #menu li {
+      margin: 0 30px;
+    }
+
+    #menu a {
+      text-decoration: none;
+      color: #4CAAAD;
+      padding: 5px;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom-color 0.3s ease-in-out;
+    }
+
+    #menu a:hover {
+      border-bottom-color: #FF27D1;
+    }
+
+    .animated-text {
+      opacity: 0;
+      margin-top: 20px;
+      transform: translateY(20px);
+      animation: slideInText 1s ease-in-out forwards;
+    }
+
+    @keyframes slideInText {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+     h1 { text-decoration: underline #FF27D1; }
+    h2 { text-decoration: underline teal; }
+
+    .image-description-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 20px;
+    }
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 200px;
+      transition: transform 0.3s;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .text-container {
+      text-align: center;
+    }
+
+    .text-container p {
+      color: #999999;
+    }
+
+    #footer {
+      background-color: #4CAAAD;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+ 
+  
+</head>
+<body>
+  <div id="header">
+    <div id="logo">
+      <img src="logo.png" width="auto" height="120" />
+    </div>
+    <ul id="menu">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="o_nas.html">O nas</a></li>
+      <li><a href="oferta.html">Oferta</a></li>
+      
+      <li><a href="procesy.html">Procesy</a></li>
+      
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+  <hr style="color: #FFFFFF; background-color: #F6F6F6; width: 100%; height: 2px;" />
+  <div class="animated-text">
+    <h1> Norda Automation - Twoja Wizja, Nasze Rozwiązania</h1>
+    <p>Jesteśmy jednym z liderów na rynku Europejskim, odnosimy sukcesy również na rynku światowym. Nasz zespół to przede wszystkim pasjonaci systemów automatyki, co gwarantuje niezawodność z dbałością o najmniejsze szczegóły oraz powstawanie nowoczesnych rozwiązań!</p>
+  </div>
+  <br>
+<div class="container">
+        <button id="showButton">Dlaczego my?</button>
+    </div>
+                             <div class="hidden-content">
+  <div class="image-description-container">
+    <div class="image-container">
+      <img src="zdjecie1.jpg" alt="Zdjęcie 1" width="300" height="200" />
+      <div class="text-container">
+        <h2 class="colored-underline">Automatyka przemysłowa</h2>
+        <p>Oferujemy usługi w zakresie realizacji projektów automatyki przemysłowej zarówno w powstających jak i modernizowanych obiektach. Specjalizujemy się w prowadzeniu kompleksowo projektów „od początku do końca”.</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="zdjecie2.jpg" alt="Zdjęcie 2" width="300" height="200" />
+      <div class="text-container">
+        <h2 class="colored-underline">Automatyka morska</h2>
+        <p>Dział automatyki morskiej zajmuje się szeroko pojętą współpracą ze stoczniami i bezpośrednio z armatorami na całym świecie. Zajmujemy się serwisowaniem istniejących systemów oraz projektowaniem i produkcją własnych układów z zakresu energetyki i automatyki okrętowej.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-description-container">
+    <div class="image-container">
+      <img src="zdjecie3.jpg" alt="Zdjęcie 3" width="300" height="200" />
+      <div class="text-container">
+        <h2 class="colored-underline">Certyfikaty UL</h2>
+        <p>Wyróżnia nas certyfikat UL, który pozwala nam na eksport produktów do Stanów Zjednoczonych oraz Kanady. Aby nasze wyroby przeszły testy, musiały spełniać amerykańskie normy, które są znacznie bardziej restrykcyjne i szczegółowe niż ich europejskie odpowiedniki.</p>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="zdjecie4.jpg" alt="Zdjęcie 4" width="300" height="200" />
+      <div class="text-container">
+        <h2 class="colored-underline">Certyfikat EAC</h2>
+        <p>Posiadamy certyfikat EAC, pozwalający nam na eksport produktów do Rosji, Kazachstanu, Białorusi, Armenii i Kirgistanu. Dokument potwierdza zgodność wykonania naszych szaf sterowniczych z normami i standardami jakości i bezpieczeństwa obowiązującymi na rynkach Państw należących do Unii Celnej.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-description-container">
+    <div class="image-container">
+      <img src="zdjecie5.jpg" alt="Zdjęcie 5" width="300" height="200" />
+      <div class="text-container">
+        <h2 class="colored-underline">Serwis</h2>
+        <p>Zapewniamy serwis gwarancyjny i pogwarancyjny. W celu przedłużenia żywotności instalacji oferujemy okresowe oględziny i przeglądy instalacji przemysłowych. Umowę serwisowe są sporządzane w zależności od indywidualnych potrzeb Klienta oraz charakterystyki urządzeń. Przeprowadzamy również parametryzację systemów automatyki przemysłowej.</p>
+      </div>
+    </div>
+  </div>
+
+
+              </div>
+    <script src="scriptindex.js"></script>
+  <div id="footer">
+    &copy; Norda Automation 2023
+  </div>
+</body>
+</html>

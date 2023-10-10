@@ -1,0 +1,113 @@
+<style>
+    body {
+      align-items: center;
+      text-align: center;
+      background-color: #FFFFFF;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+    }
+
+    #logo {
+      margin-left: 50px;
+    }
+
+    #menu {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 50px;
+    }
+
+    #menu li {
+      margin: 0 30px;
+    }
+
+    #menu a {
+      text-decoration: none;
+      color: #4CAAAD;
+      padding: 5px;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom-color 0.3s ease-in-out;
+    }
+
+    #menu a:hover {
+      border-bottom-color: #FF27D1;
+    }
+
+    .animated-text {
+      opacity: 0;
+      margin-top: 20px;
+      transform: translateY(20px);
+      animation: slideInText 1s ease-in-out forwards;
+    }
+
+    @keyframes slideInText {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+     h1 { text-decoration: underline #FF27D1; }
+    h2 { text-decoration: underline teal; }
+
+    .image-description-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 20px;
+    }
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 200px;
+      transition: transform 0.3s;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .text-container {
+      text-align: center;
+    }
+
+    .text-container p {
+      color: #999999;
+    }
+
+    #footer {
+      background-color: #4CAAAD;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>

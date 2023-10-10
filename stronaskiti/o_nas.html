@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norda Automation - O nas</title>
+    <link rel="stylesheet" href="styleonaslicznik.css">
+	<link rel="stylesheet" href="styleonas.css">
+	<link rel="icon" type="png" sizes="16x16" href="favicon-16x16.png">
+    
+
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #logo {
+            margin-left: 50px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 50px;
+        }
+
+        #menu li {
+            margin: 0 30px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #4CAAAD;
+            padding: 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom-color 0.3s ease-in-out;
+			font-size: 16px;
+        }
+
+        #menu a:hover {
+            border-bottom-color: #FF27D1;
+        }
+
+        .animated-text {
+            opacity: 0;
+            margin-top: 20px;
+            transform: translateY(20px);
+            animation: slideInText 1s ease-in-out forwards;
+        }
+
+        @keyframes slideInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        h2 { text-decoration: underline teal; }
+
+        
+        .image-description-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            opacity: 1;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .image-container img {
+            width: 80%;
+            height: auto; 
+            transition: transform 0.3s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .text-container {
+            text-align: left;
+            flex: 1; 
+            padding: 20px; 
+        }
+
+        .text-container p {
+            color: #999999;
+            font-size: 16px;
+        }
+		
+ #footer {
+      background-color: #4CAAAD;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+   #onas {
+        background-color: #F6F6F6; 
+        padding: 30px; 
+	padding-left:400px;
+	padding-right:400px;
+    }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+        <img src="logo.png" width="auto" height="120" />
+    </div>
+    <ul id="menu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="o_nas.html">O nas</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="procesy.html">Procesy</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</div>
+<hr style="color: #FFFFFF; background-color: #F6F6F6; width: 100%; height: 2px;" />
+
+<div id="onas">
+    <h1><u>O nas</u></h1>
+</div>
+<br>
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="zdjonas1.jpg" alt="Zdjęcie 1" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Nasza historia</h2>
+        <div class="animated-text">
+            <p>Od początku działalności wychodzimy naprzeciw oczekiwaniom naszych klientów i oferujemy wysoką jakość usług w dziedzinie automatyki. Na pierwszym miejscu zawsze stawiamy satysfakcję klientów. W celu zwiększenia wydajności i efektywności instalacji stosujemy nowoczesne rozwiązania. Młody, doświadczony zespół wraz z absolwentami uczelni technicznych ma świeże spojrzenie na napotykane w pracy wyzwania i kreatywnie je rozwiązuje. Dzięki temu nasze systemy wyróżniają się na tle innych. Prężnie się rozwijamy i zdobywamy nowe certyfikacje potwierdzające jakość świadczonych usług.</p>
+        </div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="zdjonas4.jpg" alt="Zdjęcie 1" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Nasze wydarzenia</h2>
+		<div class="animated-text">
+        <p>Na tej osi czasu umieściliśmy jedne z najważniejszych wydarzeń w naszej firmie!</p>
+	</div>
+    </div>
+</div>
+
+<div class="counter-wrapper">
+    <div class="counter">
+        <h1 class="count" data-target="2006">0</h1>
+        <p>Rok założenia</p>
+    </div>
+    <div class="counter">
+        <h1 class="count" data-target="216">0</h1>
+        <p>Zaangażowanych pracowników</p>
+    </div>
+    <div class="counter">
+        <h1 class="count" data-target="186">0</h1>
+        <p>Zadowolonych klientów</p>
+    </div>
+    <div class="counter">
+        <h1 class="count" data-target="2957">0</h1>
+        <p>Zrealizowanych projektów</p>
+    </div>
+</div>
+
+<script src="scriptonaslicznik.js"></script>
+
+<br>
+<br>
+
+<br>
+<br>
+<div id="footer">
+    &copy; Norda Automation 2023
+</div>
+</body>
+</html>

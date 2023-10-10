@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Norda Automation - Procesy</title>
+    <link rel="icon" type="png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #logo {
+            margin-left: 50px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 50px;
+        }
+
+        #menu li {
+            margin: 0 30px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #4CAAAD;
+            padding: 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom-color 0.3s ease-in-out;
+			font-size: 16px;
+        }
+
+        #menu a:hover {
+            border-bottom-color: #FF27D1;
+        }
+
+        .animated-text {
+            opacity: 0;
+            margin-top: 20px;
+            transform: translateY(20px);
+            animation: slideInText 1s ease-in-out forwards;
+        }
+
+        @keyframes slideInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        h2 { text-decoration: underline teal; }
+
+        /* Nowe style dla struktury zdjęcie-opis */
+        .image-description-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            opacity: 1;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .image-container img {
+            width: 80%; 
+            height: auto; 
+            transition: transform 0.3s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .text-container {
+            text-align: left;
+            flex: 1; 
+            padding: 20px; 
+        }
+
+        .text-container p {
+            color: #999999;
+            font-size: 16px; 
+        }
+		
+ #footer {
+      background-color: #4CAAAD;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+  #procesy {
+        background-color: #F6F6F6; 
+        padding: 30px; 
+	padding-left:400px;
+	padding-right:400px;
+    }
+    </style>
+
+    
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+        <img src="logo.png" width="auto" height="120" />
+    </div>
+    <ul id="menu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="o_nas.html">O nas</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="procesy.html">Procesy</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</div>
+<hr style="color: #FFFFFF; background-color: #F6F6F6; width: 100%; height: 2px;" />
+
+<div id="onas">
+    <h1><u>Procesy</u></h1>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="proc1.jpg" alt="Zdjęcie 1" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Opracowanie koncepcji</h2>
+        <div class="animated-text">
+            <p>Oferujemy kompletne rozwiązania systemów sterowniczych dla pojedynczych maszyn oraz linii technologicznych. Wszystkie urządzenia są projektowane i produkowane przy pomocy własnej kadry inżynierskiej i monterskiej. Dla produkowanych systemów sporządzana jest pełna dokumentacja na bazie oprogramowania CAD / E-CAD.</p>
+        </div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="proc2.jpg" alt="Zdjęcie 2" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Projekt systemu automatyki</h2>
+		<div class="animated-text">
+        <p>Zajmujemy się projektowaniem i wytwarzaniem innowacyjnych systemów sterownia automatyki.  Świadczymy też niezależne usługi projektowe dla wybranych inwestycji. Nie boimy się sięgać po niekonwencjonalne rozwiązania, szczególnie, że przyczyniają się one do wzrostu wydajności i efektywności. Zapewniamy wysoką jakość, a przy tym nowoczesne rozwiązania. Zespół naszych doświadczonych projektantów chętnie szkoli absolwentów uczelni technicznych, gwarantując im rozwój oraz zdobycie doświadczenia zawodowego popartego ukończonymi realizacjami i wnioskami płynącymi z wykonanych projektów.</p>
+	</div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="proc3.jpg" alt="Zdjęcie 3" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Prefabrykacja szaf sterowniczych</h2>
+        <div class="animated-text">
+            <p>Jednym z elementów naszej oferty jest prefabrykacja szaf zasilających i sterowniczych. Prefabrykację wykonujemy według projektów wykonanych przez naszych inżynierów projektantów bądź realizujemy według projektów powierzonych przez klientów. Według potrzeb klienta oferujemy szafy wykonane w obudowach z  tworzyw sztucznych , stali malowanej proszkowo lub stali nierdzewnej. Z wykorzystaniem komponentów renomowanych producentów i dostawców. Dzięki centrum obróbczemu Perforex BC elewacja szafy oraz płyta montażowa są obrabiane z wysoką precyzją i powtarzalnością.</p>
+        </div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="proc4.jpg" alt="Zdjęcie 4" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Programowanie</h2>
+		<div class="animated-text">
+        <p>Zespół naszych programistów cechuje duża wiedza merytoryczna związana ze sprzętem i środowiskami programistycznymi czołowych dostawców automatyki takich jak: Siemens, Allen Bradley, Mitsubishi, Eaton i inni). Nasi wykwalifikowani inżynierowie  znają bardzo dobrze procesy technologiczne z różnych gałęzi przemysłu, dzięki temu współpraca z klientami odbywa się sprawnie, proponowane przez nas rozwiązania są niezawodne i wysoce zoptymalizowane. W oparciu o wiedzę i doświadczenie opracowaliśmy wiele innowacyjnych algorytmów, które usprawniły procesy naszych klientów i rozwiązały problemy „niemożliwe” do rozwiązania.</p>
+	</div>
+    </div>
+</div>
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="proc5.jpg" alt="Zdjęcie 5" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Instalacja</h2>
+        <div class="animated-text">
+            <p>Po wykonaniu wszystkich elementów systemu zapewniamy ich instalację na obiekcie. Przeprowadzamy pomiary odbioru instalacji oraz uruchomienie całego systemu. Zakończeniem projektu jest przekazanie całej instalacji klientowi.</p>
+        </div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="proc6.jpg" alt="Zdjęcie 6" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Uruchomienie</h2>
+		<div class="animated-text">
+        <p>Przed opuszczeniem siedziby firmy nasze rozdzielnice i systemy automatyki są testowane elektrycznie i logicznie, dodatkowo przechodzą wewnętrzną kontrolę jakości. W docelowej lokalizacji każdy system ponownie badamy pod kątem technicznym razem z całą instalacją i obiektem technologicznym. Uruchomienie kończy się w momencie, kiedy wspólnie z klientem osiągamy zadowalający efekt. Przekazujemy aktualna dokumentację techniczną, przeprowadzamy profesjonalne szkolenie dla operatorów i zapewniamy ciągłe wsparcie po uruchomieniu. Jeżeli zajdzie potrzeba rozbudowy bądź modernizacji sytemu– jesteśmy do dyspozycji.</p>
+	</div>
+    </div>
+</div>
+<br>
+<br>
+
+<br>
+<br>
+<div id="footer">
+    &copy; Norda Automation 2023
+</div>
+</body>
+</html>

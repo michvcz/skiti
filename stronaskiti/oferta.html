@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Norda Automation - Oferta</title>
+   <link rel="icon" type="png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #logo {
+            margin-left: 50px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 50px;
+        }
+
+        #menu li {
+            margin: 0 30px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #4CAAAD;
+            padding: 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom-color 0.3s ease-in-out;
+			font-size: 16px;
+        }
+
+        #menu a:hover {
+            border-bottom-color: #FF27D1;
+        }
+
+        .animated-text {
+            opacity: 0;
+            margin-top: 20px;
+            transform: translateY(20px);
+            animation: slideInText 1s ease-in-out forwards;
+        }
+
+        @keyframes slideInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        h2 { text-decoration: underline teal; }
+
+       
+        .image-description-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            opacity: 1;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .image-container img {
+            width: 80%; 
+            height: auto; 
+            transition: transform 0.3s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .text-container {
+            text-align: left;
+            flex: 1; 
+            padding: 20px; 
+        }
+
+        .text-container p {
+            color: #999999;
+            font-size: 16px; 
+        }
+		
+ #footer {
+      background-color: #4CAAAD;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+  #procesy {
+        background-color: #F6F6F6; 
+        padding: 30px; 
+	padding-left:400px;
+	padding-right:400px;
+    }
+    </style>
+
+    
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+        <img src="logo.png" width="auto" height="120" />
+    </div>
+    <ul id="menu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="o_nas.html">O nas</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="procesy.html">Procesy</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</div>
+<hr style="color: #FFFFFF; background-color: #F6F6F6; width: 100%; height: 2px;" />
+
+<div id="onas">
+    <h1><u>Oferta</u></h1>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="ofe1.jpg" alt="Zdjęcie 1" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Prefabrykacja szaf sterowniczych</h2>
+        <div class="animated-text">
+            <p>Jednym z elementów naszej oferty jest prefabrykacja szaf zasilających i sterowniczych. Prefabrykację wykonujemy według projektów wykonanych przez naszych inżynierów projektantów bądź realizujemy według projektów powierzonych przez klientów. Według potrzeb klienta oferujemy szafy wykonane w obudowach z  tworzyw sztucznych , stali malowanej proszkowo lub stali nierdzewnej. Z wykorzystaniem komponentów renomowanych producentów i dostawców. Dzięki centrum obróbczemu Perforex BC elewacja szafy oraz płyta montażowa są obrabiane z wysoką precyzją i powtarzalnością.</p>
+        </div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="ofe2.jpg" alt="Zdjęcie 2" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Układy zrobotyzowane</h2>
+		<div class="animated-text">
+        <p>Dzięki ciągłemu rozwojowi naszej firmy i intensywnej pracy działu R&D, oferujemy usługi związane z programowaniem robotów przemysłowych. Jesteśmy w stanie zaproponować  rozwiązania dla dużych robotów przemysłowych oraz robotów kolaborujących w oparciu komponenty naszych partnerów.</p>
+	</div>
+    </div>
+</div>
+
+<div class="image-description-container">
+    <div class="image-container">
+        <img src="ofe3.jpg" alt="Zdjęcie 3" />
+    </div>
+    <div class="text-container">
+        <h2 class="colored-underline">Gospodarka wodno-ściekowa</h2>
+        <div class="animated-text">
+            <p>Oferujemy nowoczesne układy sterowania dla gospodarki wodno-ściekowej.
+             Automatyzacja jednostek wodno-ściekowych oraz poszczególnych procesów pozwala ochronić środowisko, podnieść jakość wody i zapewnić ciągłość dostaw. Nasze układy automatyki dla urządzeń oparte o sterowniki swobodnie programowalne i systemy wizualizacyjne zapewniają bezobsługową wysoko efektywną pracę. Dla każdego projektu dobieramy najlepsze rozwiązania z uwzględnieniem specyfiki obiektu. Wszystkie prace wykonujemy zgodnie ze standardami (kontroli) jakości, bezpieczeństwa zdrowotnego i norm środowiskowych.</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="text-container">
+Elipsa! 
+<br>
+<svg><ellipse cx="200" cy="80" rx="100" ry="50" /></svg></p>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+<div class="text-container">
+<p> wzór na deltę</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>&#x394;</mi> 
+    <mo>=</mo>
+    <msup>
+      <mrow>
+        <mo>(</mo>
+        <mi>b</mi>
+        <mo>)</mo>
+      </mrow>
+      <mrow>
+        <mo>^</mo>
+        <mn>2</mn>
+      </mrow>
+    </msup>
+    <mo>-</mo>
+    <mn>4</mn>
+    <mo>&#x22C5;</mo>
+    <mi>a</mi>
+    <mo>&#x22C5;</mo>
+    <mi>c</mi>
+  </math></p>
+  </div>
+  
+<br>
+<br>
+<div id="footer">
+    &copy; Norda Automation 2023
+</div>
+</body>
+</html>
